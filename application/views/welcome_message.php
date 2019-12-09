@@ -1,89 +1,90 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>POSPRO-CI</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
 
-	<style type="text/css">
+	<!-- Favicons -->
+	<link href="img/favicon.png" rel="icon">
+	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+	<!-- Bootstrap css -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+	<!-- Libraries CSS Files -->
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/animate/animate.min.css" rel="stylesheet">
+	<link href="<?php echo base_url(); ?>asset/welcome/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+	<!-- Main Stylesheet File -->
+	<link href="<?php echo base_url(); ?>asset/welcome/css/style.css" rel="stylesheet">
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+	<!-- =======================================================
+    Theme Name: eStartup
+    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
+
 <body>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<header id="header" class="header header-hide">
+		<div class="container">
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+			<div id="logo" class="pull-left">
+				<h1><a href="#body" class="scrollto"><b>POSPRO-CI</b></a></h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+			</div>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li><a href="<?php echo base_url(); ?>login">Login</a></li>
+					<li><a href="<?php echo base_url(); ?>login/register">Register</a></li>
+				</ul>
+			</nav><!-- #nav-menu-container -->
+		</div>
+	</header><!-- #header -->
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+	<!--==========================
+    Hero Section
+  ============================-->
+	<section id="hero" class="wow fadeIn">
+		<div class="hero-container">
+			<br>
+			<h1>Welcome to POSPRO-CI</h1>
+			<img src="<?php echo base_url(); ?>asset/welcome/img/hero-img.PNG" alt="Hero Imgs">
+			<a href="#get-started" class="btn-get-started scrollto">Bertho Erizal</a>
+		</div>
+	</section><!-- #hero -->
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
+	<!-- JavaScript Libraries -->
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/jquery/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/jquery/jquery-migrate.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/superfish/hoverIntent.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/superfish/superfish.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/easing/easing.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/modal-video/js/modal-video.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="<?php echo base_url(); ?>asset/welcome/lib/wow/wow.min.js"></script>
+	<!-- Contact Form JavaScript File -->
+	<script src="<?php echo base_url(); ?>asset/welcome/contactform/contactform.js"></script>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
+	<!-- Template Main Javascript File -->
+	<script src="<?php echo base_url(); ?>asset/welcome/js/main.js"></script>
 
 </body>
+
 </html>
