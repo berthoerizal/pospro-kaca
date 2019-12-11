@@ -5,15 +5,15 @@
     <h1 class="h3 mb-2 text-gray-800"><?php echo $title; ?></h1>
 
     <!-- DataTales Example -->
-    <div class="card shadow mb-4">
+    <div class="card shadow mb-4 col-md-6">
         <div class="card-header py-3">
-            <p style="text-align: right; font-weight: bold;" id="demo"></p>
+            <a href="<?php echo base_url('countdown/show'); ?>" class="btn btn-primary btn-sm" style="text-align: left;"><i class="fa fa-calendar-times"></i> Go</a>
         </div>
         <div class="card-body">
             <?php
             echo form_open(base_url('countdown'));
             ?>
-            <div class="col-md-5">
+            <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -33,6 +33,11 @@
                 </div>
             </div>
             <?php echo form_close(); ?>
+        </div>
+    </div>
+    <div class="card shadow mb-4 col-md-6" style="max-height: 200px;">
+        <div class="card-body">
+            <h1 style="text-align: center; font-weight: bold;" id="demo"></h1>
         </div>
     </div>
 

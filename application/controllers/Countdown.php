@@ -57,4 +57,15 @@ class Countdown extends CI_Controller
             redirect(base_url('countdown'));
         }
     }
+
+    public function show()
+    {
+        $id = 1;
+        $countdown = $this->countdown_model->detail($id);
+        $data = array(
+            'title' => 'Countdown',
+            'countdown' => $countdown
+        );
+        $this->load->view('countdown_view', $data, FALSE);
+    }
 }
