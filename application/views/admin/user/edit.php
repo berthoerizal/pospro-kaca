@@ -27,7 +27,6 @@
                 <div class="form-group">
                     <label for="akses_level">Akses Level</label>
                     <select class="form-control form-control-sm" id="akses_level" name="akses_level">
-                        <option value="1">Usermaster</option>
                         <option value="2" <?php if ($user->akses_level == 2) {
                                                 echo "selected";
                                             } ?>>User</option>

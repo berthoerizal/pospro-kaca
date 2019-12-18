@@ -22,7 +22,7 @@ class Konfigurasi extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('akses_level') == 1) {
+        if ($this->session->userdata('akses_level') == 1 || $this->session->userdata('akses_level') == 2) {
             $this->load->model('konfigurasi_model');
         } else {
             redirect('login', 'refresh');

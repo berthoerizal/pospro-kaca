@@ -1,46 +1,48 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class User_model extends CI_Model
+class Datasets_model extends CI_Model
 {
+    public $CI;
 
     public function __construct()
     {
         parent::__construct();
-        $this->load->database();
+        $CI = &get_instance();
+        $this->db2 = $CI->load->database('db_kaca', TRUE);
     }
 
-    public function listing_user()
+    public function listing()
     {
-        $query = $this->db->query("select * from user where akses_level=2");
+        $query = $this->db2->get('tb_datasets');
         return $query->result();
     }
 
     //show data detail
     public function detail($id)
     {
-        $query = $this->db->get_where('user', array('id' => $id));
+        $query = $this->db2->get_where('tb_datasets', array('id' => $id));
         return $query->row();
     }
 
     //tambah data
     public function add($data)
     {
-        $this->db->insert('user', $data);
+        $this->db2->insert('tb_datasets', $data);
     }
 
     //edit data
     public function update($data)
     {
-        $this->db->where('id', $data['id']);
-        $this->db->update('user', $data);
+        $this->db2->where('id', $data['id']);
+        $this->db2->update('tb_datasets', $data);
     }
 
     //delete data
     public function delete($data)
     {
-        $this->db->where('id', $data['id']);
-        $this->db->delete('user', $data);
+        $this->db2->where('id', $data['id']);
+        $this->db2->delete('tb_datasets', $data);
     }
 }
 

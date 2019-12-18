@@ -1,12 +1,14 @@
+<?php
+$konfig = $this->konfigurasi_model->listing(); ?>
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>">
-        <div class="sidebar-brand-icon rotate-n-15">
+        <!-- <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">POSPRO-CI</div>
+        </div> -->
+        <div class="sidebar-brand-text mx-3">POSPRO-<?php echo $konfig->nama_web; ?></div>
     </a>
 
     <!-- Divider -->
@@ -17,6 +19,20 @@
         <a class="nav-link" href="<?php echo base_url(); ?>user">
             <i class="fa fa-users"></i>
             <span>User</span></a>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            <i class="fa fa-folder"></i>
+            <span>Datasets</span>
+        </a>
+        <div id="collapse1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="<?php echo base_url(); ?>jenis_kaca">Jenis Kaca</a>
+                <a class="collapse-item" href="<?php echo base_url(); ?>datasets">Data</a>
+            </div>
+        </div>
     </li>
 
     <!-- Divider -->

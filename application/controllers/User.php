@@ -22,7 +22,7 @@ class User extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('akses_level') == 1) {
+        if ($this->session->userdata('akses_level') == 1 || $this->session->userdata('akses_level') == 2) {
             $this->load->model('user_model');
         } else {
             redirect('login', 'refresh');
@@ -48,7 +48,7 @@ class User extends CI_Controller
             'matches' => 'Konfirmasi password tidak valid'
         ));
 
-        $user = $this->user_model->listing();
+        $user = $this->user_model->listing_user();
         if ($valid->run() === FALSE) {
             $data = array(
                 'title' => 'User',
@@ -61,7 +61,7 @@ class User extends CI_Controller
                 'name' => $this->input->post('name'),
                 'username' => $this->input->post('username'),
                 'password' => sha1($this->input->post('password')),
-                'akses_level' => $this->input->post('akses_level'),
+                'akses_level' => 2,
             );
 
             $this->user_model->add($data);
@@ -76,7 +76,6 @@ class User extends CI_Controller
         $this->form_validation->set_rules('name', 'Nama Lengkap', 'required', array('required' => 'Nama harus diisi'));
         $this->form_validation->set_rules('username', 'Username', 'required|trim', array(
             'required' => 'Username harus diisi',
-            'is_unique' => 'Username <strong>' . $this->input->post('username') . '</strong> sudah digunakan',
             'trim' => 'Username tidak boleh ada spasi'
         ));
 
@@ -92,7 +91,7 @@ class User extends CI_Controller
                 'id'    => $id,
                 'name' => $this->input->post('name'),
                 'username' => $this->input->post('username'),
-                'akses_level' => $this->input->post('akses_level'),
+                'akses_level' => 2,
             );
 
             $this->user_model->update($data);
