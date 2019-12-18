@@ -22,7 +22,7 @@ class Excel extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('akses_level') == 1 || $this->session->userdata('akses_level') == 2) {
+        if ($this->session->userdata('akses_level') == 1) {
             $this->load->model('excel_model');
             $this->load->library('PHPExcel/IOFactory');
         } else {

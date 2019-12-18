@@ -22,7 +22,7 @@ class Berkas extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('akses_level') == 1 || $this->session->userdata('akses_level') == 2) {
+        if ($this->session->userdata('akses_level') == 1) {
             $this->load->model('berkas_model');
         } else {
             redirect('login', 'refresh');
