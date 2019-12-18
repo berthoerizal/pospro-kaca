@@ -96,7 +96,7 @@ class User extends CI_Controller
             );
 
             $this->user_model->update($data);
-            $this->session->set_flashdata('sukses', 'Data telah diedit');
+            $this->session->set_flashdata('sukses', 'Data telah diperbarui');
             redirect(base_url('user'));
         }
     }

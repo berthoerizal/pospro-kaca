@@ -1,3 +1,5 @@
+<?php
+$konfig = $this->konfigurasi_model->listing(); ?>
 </div>
 <!-- End of Main Content -->
 
@@ -5,7 +7,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Bertho Erizal 2019</span>
+            <span>Copyright &copy; <?php echo $konfig->author; ?> 2019</span>
         </div>
     </div>
 </footer>

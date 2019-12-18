@@ -30,7 +30,7 @@
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fa fa-folder"></i>
             <span>Components</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -44,6 +44,12 @@
                 <a class="collapse-item" href="<?php echo base_url(); ?>lokasi">Lokasi</a>
             </div>
         </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>konfigurasi">
+            <i class="fa fa-wrench"></i>
+            <span>Konfigurasi</span></a>
     </li>
 
     <!-- Divider -->

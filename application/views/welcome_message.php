@@ -1,12 +1,15 @@
+<?php
+$konfig = $this->konfigurasi_model->listing(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>POSPRO-CI</title>
+	<title>POSPRO-<?php echo $konfig->nama_web; ?></title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
+	<meta content="<?php echo $konfig->author; ?>" name="author">
 
 	<!-- Favicons -->
 	<link href="img/favicon.png" rel="icon">
@@ -63,9 +66,9 @@
 	<section id="hero" class="wow fadeIn">
 		<div class="hero-container">
 			<br>
-			<h1>Welcome to POSPRO-CI</h1>
+			<h1>Welcome to POSPRO-<?php echo $konfig->nama_web; ?></h1>
 			<img src="<?php echo base_url(); ?>asset/welcome/img/hero-img.PNG" alt="Hero Imgs">
-			<a href="#get-started" class="btn-get-started scrollto">Bertho Erizal</a>
+			<a href="#get-started" class="btn-get-started scrollto"><?php echo $konfig->author; ?></a>
 		</div>
 	</section><!-- #hero -->
 
