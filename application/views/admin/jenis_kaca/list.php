@@ -17,7 +17,7 @@
         <div class="col-md-3 mr-2 ml-5 mb-2">
             <div class="card shadow col-md-12">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tambah Jenis Kaca</h6>
+                    <h6 class="m-0 font-weight-bold text-primary"><i class="fa fa-plus-circle"></i> Tambah Jenis Kaca</h6>
                 </div>
                 <div class="card-body">
                     <?php echo form_open(base_url('jenis_kaca')); ?>
