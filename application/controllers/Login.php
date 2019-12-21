@@ -20,7 +20,7 @@ class Login extends CI_Controller
 		$password = $this->input->post('password');
 
 		if ($valid->run()) {
-			$this->simple_login->login($username, $password, base_url('user'), base_url('login'));
+			$this->simple_login->login($username, $password, base_url('datasets'), base_url('login'));
 		}
 
 		$data = array('title' => 'Login',);

@@ -21,18 +21,10 @@ $konfig = $this->konfigurasi_model->listing(); ?>
             <span>User</span></a>
     </li>
 
-    <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <a class="nav-link" href="<?php echo base_url(); ?>datasets">
             <i class="fa fa-folder"></i>
-            <span>Datasets</span>
-        </a>
-        <div id="collapse1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="<?php echo base_url(); ?>jenis_kaca">Jenis Kaca</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>datasets">Data</a>
-            </div>
-        </div>
+            <span>Datasets</span></a>
     </li>
 
     <!-- Divider -->
@@ -44,23 +36,7 @@ $konfig = $this->konfigurasi_model->listing(); ?>
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fa fa-folder"></i>
-            <span>Components</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="<?php echo base_url(); ?>berita">Berita</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>berkas">Berkas</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>excel">Import Excel</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>autofill">Auto Fill</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>countdown">Countdown</a>
-                <a class="collapse-item" href="<?php echo base_url(); ?>lokasi">Lokasi</a>
-            </div>
-        </div>
-    </li>
+
 
     <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>konfigurasi">

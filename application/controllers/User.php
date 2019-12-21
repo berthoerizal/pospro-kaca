@@ -72,7 +72,7 @@ class User extends CI_Controller
 
     public function update($id)
     {
-        $user = $this->user_model->listing();
+        $user = $this->user_model->listing_user();
         $this->form_validation->set_rules('name', 'Nama Lengkap', 'required', array('required' => 'Nama harus diisi'));
         $this->form_validation->set_rules('username', 'Username', 'required|trim', array(
             'required' => 'Username harus diisi',

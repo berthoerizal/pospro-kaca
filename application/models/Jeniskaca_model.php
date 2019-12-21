@@ -18,6 +18,18 @@ class Jeniskaca_model extends CI_Model
         return $query->result();
     }
 
+    // public function listing_array()
+    // {
+    //     $query = $this->db2->get('tb_jenis');
+
+    //     if ($query->num_rows() > 0) {
+    //         //true if there are rows in the table
+    //         return $query->result_array(); //returns an object of data
+    //     }
+
+    //     return false;
+    // }
+
     //show data detail
     public function detail($id)
     {

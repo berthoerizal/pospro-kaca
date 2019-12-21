@@ -39,7 +39,7 @@
         <div class="col-md-8">
             <div class="card shadow col-md-12">
                 <div class="card-header py-3">
-                    <!-- <h6 class="m-0 font-weight-bold text-primary"></h6> -->
+                    <a href="<?php echo base_url('datasets'); ?>" class="btn btn-primary btn-sm"><i class="fa fa-arrow-left"></i> Kembali</a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
