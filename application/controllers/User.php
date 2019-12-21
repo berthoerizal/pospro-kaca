@@ -111,7 +111,7 @@ class User extends CI_Controller
 
     public function update_password($id)
     {
-        $user = $this->user_model->listing();
+        $user = $this->user_model->listing_user();
         $valid = $this->form_validation;
         $valid->set_rules('password', 'Password', 'required|max_length[20]|min_length[6]', array(
             'required' => 'Password harus diisi',
