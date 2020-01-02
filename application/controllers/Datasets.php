@@ -37,7 +37,7 @@ class Datasets extends CI_Controller
         $jenis_kaca = $this->jeniskaca_model->listing();
         $jenis_kaca_edit = $this->jeniskaca_model->listing();
         $data = array(
-            'title' => 'Datasets',
+            'title' => 'Datasets Kaca',
             'isi' => 'admin/datasets/list',
             'datasets' => $datasets,
             'jenis_kaca' => $jenis_kaca,

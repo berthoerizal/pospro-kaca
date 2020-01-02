@@ -59,8 +59,6 @@ $konfig = $this->konfigurasi_model->listing(); ?>
                                             <input id="password" type="password" class="form-control form-control-user" name="password" required autocomplete="current-password" placeholder="Password">
                                         </div>
                                         <hr>
-                                        <a href="<?php echo base_url('login/register'); ?>">Belum punya akun? Daftar dulu..</a>
-                                        <br><br>
                                         <input type="submit" name="submit" value="Login" class="btn btn-primary btn-user btn-block">
                                     </form>
                                 </div>

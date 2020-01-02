@@ -35,7 +35,7 @@ class Simple_login
 			$this->CI->session->set_userdata('id_login', uniqid(rand()));
 			$this->CI->session->set_userdata('id', $id);
 			// Kalau benar di redirect			
-			redirect(base_url('datasets'));
+			redirect(base_url('entri_baru'));
 		} else {
 			$this->CI->session->set_flashdata('sukses', 'Username/password salah');
 			redirect(base_url() . 'login');
