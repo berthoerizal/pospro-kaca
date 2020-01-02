@@ -150,11 +150,17 @@
             var max = 0;
             var result;
             for (i = 0; i < knn; i++) {
-                frequency[obj[i].id_jenis] = (frequency[obj[i].id_jenis] || 0) + 1 //increment frequency
-                if (frequency[obj[i].id_jenis] > max) {
+
+                console.log("jenis[" + i + "] = " + obj[i].id_jenis);
+                frequency[obj[i].id_jenis] = (frequency[obj[i].id_jenis] || 0) + 1 //mendapatkan frekuensi
+                console.log("frekuensi[" + i + "] = " + frequency[obj[i].id_jenis]);
+                if (frequency[obj[i].id_jenis] > max) { //jika frekuensi levih besar dari max maka
                     max = frequency[obj[i].id_jenis]; //update max
+                    console.log("max[" + i + "] = " + max);
                     result = obj[i].id_jenis; //update result
+                    console.log("result[" + i + "] = " + result);
                 }
+                console.log("==========================");
             }
 
             hasil.value = result;

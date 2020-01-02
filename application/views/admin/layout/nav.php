@@ -31,21 +31,21 @@ $konfig = $this->konfigurasi_model->listing(); ?>
     <hr class="sidebar-divider">
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+    <!-- <div class="sidebar-heading">
         Interface
-    </div>
+    </div> -->
 
     <!-- Nav Item - Pages Collapse Menu -->
 
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>konfigurasi">
             <i class="fa fa-wrench"></i>
             <span>Konfigurasi</span></a>
-    </li>
+    </li> -->
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
+    <!-- <hr class="sidebar-divider"> -->
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
